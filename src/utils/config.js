@@ -1,1 +1,1 @@
-export const apiBase = "http://192.168.137.134:5000"
+export const apiBase = import.meta.env.VITE_API_BASE;

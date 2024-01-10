@@ -1,0 +1,1 @@
+# React frontend for photographer portfolios project
