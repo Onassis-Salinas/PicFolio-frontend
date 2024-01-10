@@ -1,0 +1,26 @@
+.project {
+    display: flex;
+    flex-direction: column;
+}
+
+.project img {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: var(--br);
+    object-fit: cover;
+}
+
+.project h5 {
+    margin: 0;
+    font-size: var(--text3);
+}
+
+.project p {
+    margin: 0;
+}
+
+@media (max-width: 400px) {
+    .project {
+        width: 100%;
+    }
+}

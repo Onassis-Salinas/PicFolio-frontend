@@ -1,0 +1,16 @@
+.img {
+    width: 90vw;
+    height: min(calc(100vh - 40px), 90vh);
+    object-fit: contain;
+    margin-top: -15px;
+}
+
+.h3 {
+    text-align: center;
+    color: var(--bc);
+    position: fixed;
+    bottom: 15px;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

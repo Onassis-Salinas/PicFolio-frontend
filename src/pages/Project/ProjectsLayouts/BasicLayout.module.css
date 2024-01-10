@@ -1,0 +1,30 @@
+.projectContainer h2 {
+    font-size: 40px;
+}
+
+.section {
+    min-height: 100lvh;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: clamp(300px, 90%, 1000px);
+    align-items: flex-start;
+    justify-content: center;
+    height: fit-content;
+}
+
+.image {
+    width: max(280px, 30%);
+    flex-grow: 0;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+}

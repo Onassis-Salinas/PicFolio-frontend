@@ -1,0 +1,48 @@
+.header {
+    width: calc(100% - 20px);
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    background-color: var(--text);
+    font-size: var(--text5);
+    letter-spacing: 1px;
+}
+.header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header img {
+    height: 30px;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--bc);
+}
+
+.username {
+    color: var(--bc);
+}
+.buttonsContainer {
+    display: flex;
+    gap: 10px;
+}
+.header button {
+    background-color: #fff;
+    border: 1px solid var(--bc);
+}
+
+.login {
+    background-color: var(--text) !important;
+    color: var(--bc)!important;
+}
+
+.logo {
+    font-size: 26px;
+    font-family: "EB Garamond", serif;
+    margin-right: 20px;
+}

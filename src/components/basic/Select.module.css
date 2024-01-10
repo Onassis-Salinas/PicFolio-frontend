@@ -1,0 +1,22 @@
+.select {
+    padding: 5px 10px;
+    font-size: var(--text5);
+    border: 1px solid var(--text);
+    border-radius: var(--br);
+    background-color: var(--bc);
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.select:focus {
+    outline: none;
+    border-color: #6cb2eb;
+    box-shadow: 0 0 5px rgba(108, 178, 235, 0.5);
+}
+
+.label {
+    font-size: var(--text3);
+    margin-right: 10px;
+}

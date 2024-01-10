@@ -1,0 +1,24 @@
+.projectContainer {
+    background-color: #050505;
+    min-height: 100lvh;
+    color: #fff;
+}
+
+.projectContainer h2 {
+    font-size: 60px;
+}
+
+.gallery {
+    gap: 2px;
+    width: clamp(300px, calc(100% - 4px), 2000px);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+}

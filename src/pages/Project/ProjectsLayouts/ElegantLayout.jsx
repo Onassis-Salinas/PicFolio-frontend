@@ -1,0 +1,35 @@
+import { useState } from "react";
+import { apiBase } from "../../../utils/config";
+import styles from "./ElegantLayout.module.css";
+import ImageView from "../../../components/complex/ImageView";
+
+const BasicLayout = ({ project }) => {
+    const [show, setShow] = useState(false);
+    const [displayedImage, setDisplayedImage] = useState({});
+
+    const selectImage = (image) => {
+        setDisplayedImage(image);
+        setShow(true);
+    };
+
+    return (
+        <div className={styles.projectContainer+ " layout"}>
+            <section>
+                <h2>{project.title}</h2>
+            </section>
+
+            <section>
+                <div className={styles.gallery}>
+                    {project.images.map((image, i) => (
+                        <div onClick={() => selectImage(image)} className={styles.image} key={i}>
+                            <img className={styles.img} src={image.Link.substring(0, 4) === "data" ? image.Link : `${apiBase}/images/${image.Link}`} alt="" />
+                        </div>
+                    ))}
+                </div>
+                <ImageView show={show} setShow={setShow} image={displayedImage} />
+            </section>
+        </div>
+    );
+};
+
+export default BasicLayout;

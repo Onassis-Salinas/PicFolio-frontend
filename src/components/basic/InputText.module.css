@@ -1,0 +1,35 @@
+.loginBox {
+    position: relative;
+    width: 90%;
+}
+
+.loginBox label {
+    position: absolute;
+    color: #444;
+    left: 5px;
+    top: 0;
+    font-size: var(--text4);
+    transition: all 0.2s ease;
+    cursor: text;
+}
+
+.loginBox input:focus ~ label,
+.loginBox input:valid ~ label {
+    top: -10px;
+    left: 2px;
+    font-size: 10px;
+    color: var(--color1);
+    cursor: default;
+}
+
+.loginBox input {
+    border: none;
+    background-color: var(--bc);
+    border-bottom: 1px solid #444;
+    font-size: var(--text4);
+    width: 100%;
+}
+.loginBox input:focus {
+    outline: none;
+    border-bottom: 1px solid var(--color3);
+}

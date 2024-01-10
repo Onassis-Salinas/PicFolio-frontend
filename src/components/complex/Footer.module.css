@@ -1,0 +1,19 @@
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text);
+    color: var(--bc);
+    font-size: var(--text4);
+}
+
+.legal a{
+    color: #bbe1ff;
+}
+
+.footer h3{
+    
+}
+

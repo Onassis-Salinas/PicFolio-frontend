@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+.projectContainer {
+    background-color: #111;
+}
+
+.projectContainer h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 200px;
+    color: #fff;
+    margin: 0;
+}
+
+.section {
+    min-height: 100lvh;
+}
+
+.gallery {
+    column-count: 3;
+    column-gap: 10px;
+    column-width: 290px;
+    width: max(290px, calc(100% - 20px));
+    padding: 0 10px;
+}
+.img {
+    width: 100%;
+    margin-bottom: 10px;
+    display: block;
+}

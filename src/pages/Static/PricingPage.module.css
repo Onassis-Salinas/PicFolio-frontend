@@ -1,0 +1,46 @@
+.pricingPage {
+    text-align: center;
+    margin: 50px;
+}
+
+.pricingContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.plan {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    margin: 20px;
+}
+
+.price {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    margin: 8px 0;
+}
+
+.subscribeButton {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.subscribeButton:hover {
+    background-color: #2980b9;
+}

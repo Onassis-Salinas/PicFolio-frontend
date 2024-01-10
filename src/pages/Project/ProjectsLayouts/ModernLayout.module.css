@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
+
+.projectContainer h2 {
+    font-size: 60px;
+    font-family: "Exo 2", sans-serif;
+}
+
+.section {
+    min-height: 100lvh;
+}
+
+.gallery {
+    gap: 40px;
+    width: clamp(300px, calc(100% - 80px), 2000px);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.image {
+    width: 100%;
+    flex-grow: 0;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+}

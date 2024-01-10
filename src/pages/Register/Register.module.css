@@ -1,0 +1,15 @@
+.registrationForm {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #555;
+    align-items: center;
+    border-radius: var(--br);
+}
+
+.button{
+    width: 90%;
+}

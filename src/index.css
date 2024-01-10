@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lato:wght@100;300;400&display=swap");
+
+html {
+    --bc: #f9f9f9;
+    --text: #222;
+    --color1: #1b2e3c;
+    --color2: #4b0000;
+    --color3: #0c0c1e;
+    --border-color: #fff;
+
+    --text1: 60px;
+    --text2: 30px;
+    --text3: 16px;
+    --text4: 14px;
+    --text5: 12px;
+
+    --br: 2px;
+}
+
+body {
+    color: var(--text);
+    background-color: var(--bc);
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+footer {
+    margin-top: auto;
+}
+
+.layout {
+    padding-bottom: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+h4 {
+    font-size: var(--text2);
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+/* dadasdasd */
+input[type="file"] {
+    padding: 10px 15px;
+    font-size: var(--text4);
+    border-radius: var(--br);
+    cursor: pointer;
+}
+
+.errorDiv {
+    position: fixed;
+    top: 10px;
+    color: var(--bc);
+    background-color: #4b0000;
+    padding: 8px 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 999;
+    font-size: var(--text3);
+    border-radius: var(--br);
+    max-width: 100%;
+    animation: erroranimation 3s forwards;
+    opacity: 0;
+}
+
+@keyframes erroranimation {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

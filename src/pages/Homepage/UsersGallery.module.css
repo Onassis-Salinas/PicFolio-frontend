@@ -1,0 +1,7 @@
+.homepagesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: clamp(290px, 90%, 2000px);
+    margin-bottom: 50px;
+}
