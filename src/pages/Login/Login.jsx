@@ -18,7 +18,7 @@ const Login = ({ show, setShow }) => {
         e.preventDefault();
         try {
             await axios.post(`${apiBase}/auth/login`, loginData);
-            window.location.reload();
+            // window.location.reload();
         } catch (err) {
             ShowError(err);
         }
