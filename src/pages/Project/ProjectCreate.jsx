@@ -66,12 +66,20 @@ const ProjectCreate = () => {
             const result = await axios.post(`${apiBase}/projects/create`, { title, layoutId });
             const projectId = result.data.id;
 
-            await Object.keys(images).forEach(async (i) => {
-                const formData = new FormData();
-                formData.append("file", images[i]);
-                await axios.post(`${apiBase}/projects/singleimage?title=${titles[i]}&projectId=${projectId}${i == defaultImage ? "&default=1" : ""}`, formData);
+            const formData = new FormData();
+            Object.keys(images).forEach((image) => formData.append("files", images[image]));
+
+            const metadata = [];
+            Object.keys(images).forEach((image, i) => {
+                metadata.push({
+                    title: titles[i],
+                    projectId,
+                    defaultImage: i === defaultImage,
+                });
             });
 
+            formData.append("metadata", JSON.stringify(metadata));
+            await await axios.post(`${apiBase}/projects/images`, formData);
             navigate(`/homepage/${Cookies.get("username")}`);
         } catch (err) {
             ShowError(err);
