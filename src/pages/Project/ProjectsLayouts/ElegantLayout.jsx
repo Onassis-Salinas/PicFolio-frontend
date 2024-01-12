@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { apiBase } from "../../../utils/config";
 import styles from "./ElegantLayout.module.css";
 import ImageView from "../../../components/complex/ImageView";
 
@@ -22,7 +21,7 @@ const BasicLayout = ({ project }) => {
                 <div className={styles.gallery}>
                     {project.images.map((image, i) => (
                         <div onClick={() => selectImage(image)} className={styles.image} key={i}>
-                            <img className={styles.img} src={image.Link.substring(0, 4) === "data" ? image.Link : `${apiBase}/images/${image.Link}`} alt="" />
+                            <img className={styles.img} src={image.Link} alt="" />
                         </div>
                     ))}
                 </div>

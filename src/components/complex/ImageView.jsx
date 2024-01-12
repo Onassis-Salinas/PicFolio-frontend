@@ -1,6 +1,5 @@
 import DarkLayer from "../basic/DarkLayer";
 import CloseButton from "../basic/CloseButton";
-import { apiBase } from "../../utils/config";
 import styles from "./ImageView.module.css";
 import { useEffect, useState } from "react";
 import { useRef } from "react";
@@ -22,9 +21,9 @@ const ImageView = ({ show, setShow, image }) => {
         <>
             {image.Link ? (
                 <BaseFloatingDiv animation={animation}>
-                    <img className={styles.img} src={image.Link.substring(0, 4) === "data" ? image.Link : `${apiBase}/images/${image.Link}`} alt="" />
+                    <img className={styles.img} src={image.Link} alt="" />
 
-                    <CloseButton onClick={() => setShow(false)} position="in"/>
+                    <CloseButton onClick={() => setShow(false)} position="in" />
                     {image.Title !== "undefined" ? <h3 className={styles.h3}>{image.Title}</h3> : null}
                 </BaseFloatingDiv>
             ) : null}
